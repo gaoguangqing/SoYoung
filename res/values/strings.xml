@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">测测多少岁</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="age">年龄</string>
+    <string name="detect">检测</string>
+    <string name="getphoto">获取图片</string>
+    <string name="click">戳这里</string>
+
+</resources>

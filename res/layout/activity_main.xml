@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/detect"
+        android:layout_toLeftOf="@+id/detect"
+        android:gravity="center"
+        android:textColor="#8822ff"
+        android:layout_marginRight="10dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:id="@+id/photo"
+        android:layout_above="@id/detect"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/t4"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true"
+        android:id="@+id/wait"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/age_and_gender"
+            android:drawableLeft="@drawable/male"
+            android:textColor="#ffff00ff"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="@string/age"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/getImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/photo"
+        android:background="@drawable/btn2"
+        android:text="@string/getphoto"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/detect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="17dp"
+        android:layout_toLeftOf="@+id/getImage"
+        android:background="@drawable/btn"
+        android:text="@string/detect" />
+
+</RelativeLayout>
